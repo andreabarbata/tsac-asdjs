@@ -327,24 +327,10 @@ var ris=s11(myv11);
 console.log(ris);
 
 
-function ex_1_I(array){
-	return s1(array)
-}
 
-function ex_1_R(array){
-	return sum1(myv1r,index1r,somma1r)
-}
-
-function ex_2_I(num){
-	return s2(n2)
-}
-
-function ex_2_R(num){
-	return sumd2(num2,somma2,index2)
-}
 
 function ex_3_I(array){
-	return s3(myv3)
+	return s3(array)
 }
 
 function ex_3_R(array){
@@ -352,7 +338,7 @@ function ex_3_R(array){
 }
 
 function ex_4_I(n1,n2){
-	return s4(a4,b4)
+	return s4(n1,n2)
 }
 
 function ex_4_R(n1,n2){
@@ -360,7 +346,7 @@ function ex_4_R(n1,n2){
 }
 
 function ex_5_I(n1,n2){
-	return s5(a5,b5)
+	return s5(n1,n2)
 }
 
 function ex_5_R(n1,n2){
@@ -368,27 +354,27 @@ function ex_5_R(n1,n2){
 }
 
 function ex_6_I(n1,n2){
-	return s6(a6,b6)
+	return s6(n1,n2)
 }
 
 function ex_7_I(n1,n2){
-	return s7(a7,a8)
+	return s7(n1,n2)
 }
 
 function ex_8_I(array){
-	return s8(myv8)
+	return s8(array)
 }
 
 function ex_9_I(n1,n2){
-	return s9(a9,b9)
+	return s9(n1,n2)
 }
 
 function ex_10_I(array){
-	return s10(myv10)
+	return s10(array)
 }
 
 function ex_11_I(array){
-	return s11(myv11)
+	return s11(array)
 }
 
 

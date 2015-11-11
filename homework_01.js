@@ -90,8 +90,7 @@ function s3(v){
 	return som/v.length;
 }
 
-var ris=s3(myv3);
-console.log(ris);
+
 
 //ricorsivo
 var myv3r=[1,2,3,4,5,6,7,8,9,0];
@@ -106,8 +105,7 @@ function med3(v,i,s){
 	return (s)
 }
 
-var ris = med3(myv3r,index3r,somma3r)/myv.length;
-console.log(ris);
+
 
 //ex 4
 //iterativo
@@ -130,8 +128,7 @@ function s4(n1,n2){
 	return som
 }
 
-var ris=s4(a4,b4);
-console.log(ris);
+
 
 //ricorsivo
 var a4r=5;
@@ -147,8 +144,7 @@ function f4(n1,n2,s,i){
 	return (s)
 }
 
-var ris = f4(a4r,b4r,somma4r,index4r);
-console.log(ris);
+
 
 //ex 5
 //iterativo
@@ -165,8 +161,7 @@ function s5(n1,n2){
 	return som
 }
 
-var ris=s5(a5,b5);
-console.log(ris);
+
 
 //ricorsivo
 var a5r=10;
@@ -182,8 +177,7 @@ function f5(n1,n2,s,i){
 	return (s)
 }
 
-var ris = f5(a5r,b5r,somma5r,index5r);
-console.log(ris);
+
 
 //ex 6
 //iterativo
@@ -200,8 +194,7 @@ function s6(n1,n2){
 
 }	
 	
-var ris=s6(a6,b6);
-console.log(ris);
+
 
 //ex 7
 //iterativo
@@ -229,8 +222,7 @@ function s7(n1,n2){
 
 }	
 	
-var ris=s7(a7,b7);
-console.log(ris);
+
 
 //ex 8
 //iterativo
@@ -252,8 +244,7 @@ function s8(v){
 		return mx
 }	
 
-var ris=s8(myv8);
-console.log(ris)
+
 //ex 9
 //iterativo
 var myv9=[2,6,9,1,7,2,3,0];
@@ -269,8 +260,7 @@ function s9(v1){
 		return v2
 }	
 
-var ris=s9(myv9);
-console.log(ris)
+
 
 //ex 10
 //iterativo
@@ -289,8 +279,7 @@ function s10(n1,n2){
 		
 }	
 
-var ris=s10(a10,n10);
-console.log(ris);
+
 
 //ex 11
  //iterativo
@@ -323,8 +312,7 @@ function s11(v1){
 		return v1
 }
 
-var ris=s11(myv11);
-console.log(ris);
+
 
 
 

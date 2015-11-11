@@ -1,74 +1,81 @@
-//ex 1
-//iterativo
-var myv1=[1,2,-6,4,5];
-
-function s1(v){
-	var som=0;
-	for (var i=0;i< v.length;i++){
-		if (v[i]>0){
-			som+=v[i];
-		}	
-		else return som;
-	}
-	return som;
-}
-
-var ris = s1(myv1);
-console.log(ris);
-
-//ricorsivo
-var myv1r=[1,2,6,-4,5];
-var index1r=0
-var somma1r=0
-function sum1(v,i,s){
-	if ((v[i]>0) || (i<v.lenght)){
-		s+=v[i];
-		i++;
-		s=sum1(v,i,s)
-	}
-	return s
-}
-
-var ris = sum1(myv1r,index1r,somma1r);
-console.log(ris);
- 
-//ex 2
-//iterativo
-var n2=3;
-
-function s2(num){
-	var som=0;
-	var num2=num
-	for (var i=0;i<=num2*2;i++){	
-		num+=1
-		if (((num)>=0) && (num)%2!=0);{
-			som+=(num);
+/*
+ Esercizio 1
+ Dato un array di interi, restituire la loro somma fino a che non viene ritrovato un valore negativo
+ */
+// Iterative
+// Spazio: O(1)
+// Tempo: O(n)
+function sumwhileneg(myarray) {
+	var tot = 0;
+	for(i = 0; i < myarray.length; ++i) {
+		var x = myarray[i];
+		if (x > 0) {
+			tot += x;
+		} else {
+			return tot;
 		}
-		
 	}
-	return som;
+	return tot;
 }
 
-var ris=s2(n2);
-console.log(ris);
 
-//ricorsivo
-var num2=4;
-var somma2=0;
-var index2=1;
-function sumd2(n,s,i){
-	if ((i<=n)) {
-		s+=i;
-		i+=2;
-		s=sumd2(n,s,i)
+// Ricorsive
+// Spazio: O(n)
+// Tempo: O(n)
+function sumwhilenegR(myarray) {
+	if (myarray.length == 0 || myarray[0] < 0) {
+		return 0;
+	} else {
+		return myarray[0] + sumwhilenegR(myarray.slice(1));
 	}
-	return s
 }
 
-var ris = sumd2(num2,somma2,index2);
-console.log(ris);
- 
-	
+
+function ex_1_I(myarray) {
+	return sumwhileneg(myarray);
+}
+
+function ex_1_R(myarray) {
+	return sumwhilenegR(myarray);
+}
+
+/*
+ Esercizio 2
+ Dato un numero n, restituire la somma dei primi n numeri interi positivi dispari
+ */
+// Spazio: O(1)
+// Tempo: O(n)
+function firstOdd(n) {
+	var tot = 0;
+	for(i = 0; i < n; ++i) {
+		tot += 1 + 2 * i;
+	}
+	return tot;
+}
+
+
+// Spazio: O(n)
+// Tempo: O(n)
+function firstOddR(n) {
+	if (n == 0) {
+		return 0;
+	} else {
+		return 2 * n - 1 + firstOddR(n - 1);
+	}
+}
+
+
+
+
+function ex_2_I(x) {
+	return firstOdd(x);
+}
+
+function ex_2_R(x) {
+	return firstOddR(x);
+}
+
+
 //ex 3
 //iterativo
 var myv3=[1,5,9,-6,-7,2,3,4,7,1];
@@ -321,7 +328,7 @@ console.log(ris);
 
 
 function ex_1_I(array){
-	return s1(myv)
+	return s1(array)
 }
 
 function ex_1_R(array){
